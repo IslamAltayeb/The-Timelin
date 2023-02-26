@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --dark-color: #19283f;    
+    --section-color: #eff7fa;
+    --border-radius: 5px;
+    --main-border : 1px solid #19283f;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;   
+    background-color: var(--section-color); 
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    padding: 5px;
+    color: var(--section-color);
+    background-color: var(--dark-color);
+}
+
+#sec{
+    width: 30%;
+    margin: 0 auto;
+}
+
+form input{
+    display: block;
+    padding: 5px;
+    border-radius: var(--border-radius);
+    border: var(--main-border);
+    margin: 10px;
+    margin-left: 0;
+    width: 400px;
+}
+
+form textarea {
+    width: 400px;
+    height: 150px;
+    display: block;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid var(--dark-color);
+}
+
+form button{
+    margin-top: 20px;
+    padding: 10px;
+    width: 400px;
+    color: var(--section-color);
+    background-color: var(--dark-color);
+    border-radius: 5px;
+    border: 1px solid var(--dark-color);
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+form button:hover{
+    color: var(--dark-color);
+    background-color: var(--section-color);
+    transition: .5s;
+}
+
+.user-list{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+p.user-post{
+    border: var(--main-border);
+    border-radius: var(--border-radius);
+    background-color: white;
+    color: var(--dark-color);
+    font-size: 18px;
+    line-height: 1.4;
+    padding: 5px;
+    margin-top: 5px;
+    min-height: 150px;
+}
+
+p.name-date{
+    border: var(--main-border);
+    border-radius: var(--border-radius);
+    background-color: var(--dark-color);
+    color: var(--section-color);
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+p.name-date span{
+    color: yellow;
+}
+
+footer{
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    color: var(--dark-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Line Assignment</title>
+    <link rel="shortcut icon" href="/public/icon.png">
+    <link rel="stylesheet" href="/public/style.css"/>
+</head>
+<body>
+    <h1>Time Line Posts</h1>
+    <section id="sec">
+        <form action="/create-post" method="post">
+            <input type="text" name="name" id="user-name" placeholder="User Name">
+            <textarea name="post" id="post" placeholder="type here"></textarea>
+            <button>Post a message</button>
+        </form>
+    </section>
+
+
+<div class="user-list">
+    <% for (let i=0; i<users.length;i++) {%>
+    <div class="user-list-container">
+        <p class="name-date"><span><%= users[i].name %></span> - <%= users[i].created_at %></p>
+        <p class="user-post"><%= users[i].post %></p>
+    </div>
+    <%}%>
+</div>
+
+<footer>copyright &copy;2023 By islam osman</footer>
+</body>
+</html>
